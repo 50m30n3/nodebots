@@ -1,0 +1,10 @@
+{
+  "name": "nodebots",
+  "version": "1.0.0",
+  "description": "Headless Neurobots client written in NodeJS",
+  "main": "nodebots.js",
+  "author": "Erik Entrich",
+  "dependencies": {
+    "debug": "^2.2.0"
+  }
+}
