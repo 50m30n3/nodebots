@@ -4,8 +4,9 @@ module.exports =
 	width: 1000,
 	host: 'erikentrich.de',
 	path: '/seekers/genepool/',
-	loopInterval: 250,
+	loopInterval: 5,
 	resetInterval: 1000*60*60*12,
+	statsInterval: 1000*5,
 	uploadPercentage: 0.05,
 	downloadPercentage: 0.25,
 };

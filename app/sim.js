@@ -25,7 +25,7 @@ function Sim( bots, food )
 				path: conf.path,
 			};
 
-			callback = function( response )
+			var callback = function( response )
 			{
 				var str = '';
 
@@ -113,7 +113,7 @@ function Sim( bots, food )
 
 	function reset_bots()
 	{
-		bots = [];
+		bots.length = 0;
 
 		for( var j=0; j<(conf.width*conf.height)/50000; j++ )
 		{
@@ -123,7 +123,7 @@ function Sim( bots, food )
 
 	function reset_food()
 	{
-		food = [];
+		food.length = 0;
 		fooddelay = 0;
 
 		for( var i=0; i<(conf.width*conf.height)/20000; i++ )
