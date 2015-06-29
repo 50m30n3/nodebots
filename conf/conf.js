@@ -7,6 +7,6 @@ module.exports =
 	loopInterval: 5,
 	resetInterval: 1000*60*60*12,
 	statsInterval: 1000*5,
-	uploadPercentage: 0.05,
+	uploadPercentage: 0.01,
 	downloadPercentage: 0.25,
 };
