@@ -29,6 +29,16 @@ function Stats( bots )
 			return val + bot.mutationrate / numBots;
 		}, 0);
 
+		var avgSize = bots.reduce( function( val, bot )
+		{
+			return val + bot.braindepth / numBots;
+		}, 0);
+
+		var avgComp = bots.reduce( function( val, bot )
+		{
+			return val + bot.brainsize / numBots;
+		}, 0);
+
 		console.log
 		(
 			'N:' + numBots + ' ' +
@@ -36,7 +46,9 @@ function Stats( bots )
 			'Am:' + maxAge.toFixed(0) + ' ' +
 			'Ga:' + avgGen.toFixed(2) + ' ' +
 			'Gm:' + maxGen.toFixed(0) + ' ' +
-			'Ra:' + avgRate.toFixed(2)// + ' ' +
+			'Ra:' + avgRate.toFixed(2) + ' ' +
+			'Sa:' + avgSize.toFixed(2) + ' ' +
+			'Ca:' + avgComp.toFixed(2)// + ' ' +
 		);
 	}
 
