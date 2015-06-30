@@ -185,8 +185,6 @@ function neurobot( x, y, rot, parent )
 
 	this.step = function( bots, food )
 	{
-		debug( 'Step' );
-
 		for( var i=0; i<32; i++ )
 			this.vision[i] = 0.0;
 
