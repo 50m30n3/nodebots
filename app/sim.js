@@ -15,6 +15,8 @@ function Sim( bots, food )
 	{
 		var bot = new neurobot( Math.random()*conf.width, Math.random()*conf.height, Math.PI*2*Math.random() );
 
+		debug( 'Birth' );
+
 		if( Math.random() < conf.downloadPercentage )
 		{
 			debug( 'Genome GET' );
